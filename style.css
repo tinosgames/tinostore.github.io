@@ -1,3 +1,4 @@
+/* Product Grid Styles */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -5,6 +6,7 @@
     margin: 20px;
 }
 
+/* Product Item Styles */
 .product {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -20,6 +22,7 @@
     border-radius: 8px; /* Optional: adds rounded corners */
 }
 
+/* Checkout Item Styles */
 .checkout-item img {
     width: 100px; /* Adjusted size for checkout images */
     height: auto; /* Maintain aspect ratio */
@@ -27,6 +30,7 @@
     border-radius: 8px; /* Optional: adds rounded corners */
 }
 
+/* Checkout Button Styles */
 .checkout-button {
     display: block;
     margin: 20px auto;
@@ -40,4 +44,18 @@
 
 .checkout-button:hover {
     background-color: #444;
+}
+
+/* Additional Styles (if any) */
+.cart-icon {
+    font-size: 24px; /* Style for cart icon */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    position: relative;
 }
