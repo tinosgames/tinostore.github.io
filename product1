@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 1 Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Product 1</h1>
+        <a href="cart.html" class="cart-icon">🛒</a>
+    </header>
+    <main>
+        <div class="product-detail">
+            <img src="product1.jpg" alt="Product 1">
+            <p>Description of Product 1 in detail.</p>
+            <span>$19.99</span>
+            <div class="buttons">
+                <button>Add to Cart</button>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Online Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
