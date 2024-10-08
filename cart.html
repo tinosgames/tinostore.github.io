@@ -13,33 +13,19 @@
     </header>
     <main>
         <section class="cart-items">
-            <div class="cart-item">
-                <img src="product1.jpg" alt="Product 1">
-                <div class="item-details">
-                    <h3>Product 1</h3>
-                    <p>$19.99</p>
-                    <input type="number" value="1" min="1" class="quantity">
-                    <button class="remove-button">Remove</button>
-                </div>
+            <h2>Your Cart Items</h2>
+            <div id="cart-item-container">
+                <p>No items in the cart.</p>
             </div>
-            <div class="cart-item">
-                <img src="product2.jpg" alt="Product 2">
-                <div class="item-details">
-                    <h3>Product 2</h3>
-                    <p>$29.99</p>
-                    <input type="number" value="1" min="1" class="quantity">
-                    <button class="remove-button">Remove</button>
-                </div>
+            <div class="cart-total">
+                <h3 id="cart-total">Total: $0.00</h3>
+                <button class="checkout-button">Proceed to Checkout</button>
             </div>
-            <!-- Add more cart items as needed -->
         </section>
-        <div class="cart-total">
-            <h3>Total: $49.98</h3>
-            <button class="checkout-button">Proceed to Checkout</button>
-        </div>
     </main>
     <footer>
         <p>&copy; 2024 My Online Store. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
