@@ -10,16 +10,36 @@ function updateCartDisplay() {
     if (cartItems.length === 0) {
         cartContainer.innerHTML = '<p>No items in the cart.</p>';
     } else {
-        cartItems.forEach(item => {
+        cartItems.forEach((item, index) => {
             const itemDiv = document.createElement('div');
             itemDiv.className = 'cart-item';
-            itemDiv.innerHTML = `<h3>${item.name}</h3><p>Price: $${item.price}</p>`;
+            itemDiv.innerHTML = `
+                <h3>${item.name}</h3>
+                <p>Price: $${item.price}</p>
+                <button class="delete-button" data-index="${index}">Remove</button>
+            `;
             cartContainer.appendChild(itemDiv);
             total += parseFloat(item.price);
         });
     }
 
     cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+
+    // Add event listeners to delete buttons
+    document.querySelectorAll('.delete-button').forEach(button => {
+        button.addEventListener('click', (e) => {
+            const index = e.target.dataset.index;
+            deleteCartItem(index);
+        });
+    });
+}
+
+// Function to delete an item from the cart
+function deleteCartItem(index) {
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    cartItems.splice(index, 1); // Remove the item from the array
+    localStorage.setItem('cartItems', JSON.stringify(cartItems)); // Update local storage
+    updateCartDisplay(); // Refresh the cart display
 }
 
 // Function to add item to cart
