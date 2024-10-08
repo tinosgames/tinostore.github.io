@@ -14,10 +14,17 @@
 }
 
 .product img {
-    width: 100px; /* Scale down the images */
-    height: auto;
+    width: 150px; /* Adjusted size for product images */
+    height: auto; /* Maintain aspect ratio */
     border: 2px solid #333; /* Add border around images */
-    border-radius: 8px;
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+.checkout-item img {
+    width: 100px; /* Adjusted size for checkout images */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #333; /* Add border around images */
+    border-radius: 8px; /* Optional: adds rounded corners */
 }
 
 .checkout-button {
