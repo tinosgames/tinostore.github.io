@@ -59,3 +59,15 @@ footer {
     background-color: #f1f1f1;
     position: relative;
 }
+.delete-button {
+    background-color: #ff4d4d; /* Red background */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #ff1a1a; /* Darker red on hover */
+}
