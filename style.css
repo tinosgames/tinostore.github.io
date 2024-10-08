@@ -10,6 +10,16 @@ header {
     color: #fff;
     text-align: center;
     padding: 1rem;
+    position: relative;
+}
+
+.cart-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
 }
 
 main {
@@ -30,6 +40,11 @@ main {
     transition: transform 0.2s;
     padding: 1rem;
     text-align: center;
+}
+
+.product-card a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .product-card img {
@@ -54,6 +69,30 @@ main {
 .product-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-detail {
+    text-align: center;
+}
+
+.product-detail img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-detail .buttons {
+    margin-top: 20px;
+}
+
+.product-detail button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
 }
 
 footer {
